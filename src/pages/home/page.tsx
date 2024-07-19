@@ -1,15 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
+import Layout from "../../components/layout";
 
-type Props = {};
+interface IHomeProps {}
 
-type State = {};
-
-class Home extends Component<Props, State> {
-  state = {};
-
-  render() {
-    return <div>Home</div>;
-  }
-}
+const Home: React.FunctionComponent<IHomeProps> = () => {
+  return (
+    <Layout>
+      <div>Home</div>
+    </Layout>
+  );
+};
 
 export default Home;
