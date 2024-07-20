@@ -1,15 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
+import Layout from "../../components/layout";
 
-type Props = {};
+interface IProfileProps {}
 
-type State = {};
-
-class Profile extends Component<Props, State> {
-  state = {};
-
-  render() {
-    return <div>Profile</div>;
-  }
-}
+const Profile: React.FunctionComponent<IProfileProps> = () => {
+  return (
+    <Layout>
+      <div>Post</div>
+    </Layout>
+  );
+};
 
 export default Profile;

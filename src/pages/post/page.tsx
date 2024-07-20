@@ -1,15 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
+import Layout from "../../components/layout";
 
-type Props = {};
+interface IPostProps {}
 
-type State = {};
-
-class Post extends Component<Props, State> {
-  state = {};
-
-  render() {
-    return <div>Post</div>;
-  }
-}
+const Post: React.FunctionComponent<IPostProps> = () => {
+  return (
+    <Layout>
+      <div>Post</div>
+    </Layout>
+  );
+};
 
 export default Post;

@@ -1,15 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
+import Layout from "../../components/layout";
 
-type Props = {};
+interface IErrorProps {}
 
-type State = {};
-
-class Error extends Component<Props, State> {
-  state = {};
-
-  render() {
-    return <div>Error</div>;
-  }
-}
+const Error: React.FunctionComponent<IErrorProps> = () => {
+  return (
+    <Layout>
+      <div>Error</div>
+    </Layout>
+  );
+};
 
 export default Error;
