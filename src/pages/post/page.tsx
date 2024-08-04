@@ -29,7 +29,13 @@ const Post: React.FunctionComponent<IPostProps> = () => {
                   Photos
                 </label>
               </div>
-              <button></button>
+              <button
+                className="mt-8 w-32 bg-gray-600 p-3 rounded-lg "
+                type="submit"
+              >
+                {" "}
+                Post
+              </button>
             </form>
           </div>
         </div>
